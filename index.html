@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ES6 fatArrow function</title>
+</head>
+<body>
+    <script>
+
+        //1 define
+            function myFunctionA(...n1){
+                //  This is function body
+                // statement
+                
+                console.log('-->' ,n1[0]);
+
+
+                return 10+n1[0]; // i am return number
+            }
+
+            //
+            let myFunctionB=(...n2)=>{
+                console.log(n2);
+                var a=20; // Local variable
+                // every function return something 
+                return a;
+                //return a + n2[0];
+            }
+
+            let myFunctionC = n3 =>{
+                console.log(n3);
+            }
+            
+                // every function may return somethig
+            
+               //2 call
+                let x = myFunctionA(1);
+                console.log(x);
+
+                var y = myFunctionB(2);
+                console.log(y);
+                console.log(x+y);
+
+                myFunctionC(40);
+
+    
+            
+            
+
+                
+              
+            
+             
+    </script>
+</body>
+</html>
